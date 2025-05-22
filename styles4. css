@@ -1,0 +1,97 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: skyblue; /* Light Blue Background */
+    margin: 0;
+    padding: 0;
+}
+
+/* Title */
+h1 {
+    color: black;
+    background-color: pink; /* Orange */
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Main Container */
+.container {
+    background: pink;
+    padding: 20px;
+    width: 60%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Sections */
+.section {
+    background: #ffebcc; /* Light Orange */
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Labels and Inputs */
+label {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-top: 10px;
+}
+
+input, select {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+/* Buttons */
+.btn {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px 15px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #388E3C; /* Dark Green */
+}
+
+/* Meal List */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: hsl(321, 100%, 75%); /* Light Orange */
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Gas Info */
+.gas-info {
+    background: #d4f4dd; /* Light Green */
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #2e7d32; /* Dark Green */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
