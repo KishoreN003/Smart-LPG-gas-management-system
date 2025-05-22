@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Gas Management</title>
+    <link rel="stylesheet" href="styles4.css">
+</head>
+<body>
+    <div class="container">
+        <h1> Smart Gas Management System </h1>
+
+        <!-- Constant Meals Section -->
+        <div class="section">
+            <h2>🍽 Select Constant Meal</h2>
+            <label>Meal Name:</label>
+            <select id="mealSelect" onchange="updateUnit()">
+                <option value="Rice" data-unit="kg">Rice</option>
+                <option value="Chapati" data-unit="pieces">Chapati</option>
+                <option value="Dal" data-unit="kg">Dal</option>
+                <option value="Curry" data-unit="kg">Curry</option>
+                <option value="Egg" data-unit="pieces">Egg</option>
+                <option value="Chicken" data-unit="kg">Chicken</option>
+                <option value="Fish" data-unit="kg">Fish</option>
+            </select>
+
+            <label>Number of Persons:</label>
+            <input type="number" id="personCount" min="1" value="1">
+
+            <label>Quantity per Meal (<span id="unitLabel">kg</span>):</label>
+            <input type="number" id="mealQuantity" min="0.1" step="0.1" value="1">
+
+            <button class="btn" onclick="addMeal()">Add Meal</button>
+        </div>
+        <!-- Additional Meals Section -->
+        <div class="section">
+            <h2>➕ Add Extra Meal</h2>
+            <label>Meal Name:</label>
+            <input type="text" id="extraMeal">
+
+            <label>Number of Persons:</label>
+            <input type="number" id="extraPersonCount" min="1" value="1">
+
+            <label>Quantity per Meal (kg/liter/pieces):</label>
+            <input type="number" id="extraQuantity" min="0.1" step="0.1" value="1">
+
+            <button class="btn" onclick="addExtraMeal()">Add Extra Meal</button>
+        </div>
+
+        <!-- Meal Summary -->
+        <div class="section">
+            <h2>📋 Meal Summary</h2>
+            <ul id="mealList"></ul>
+        </div>
+
+        <!-- Gas Information -->
+        <div class="section gas-info">
+            <h2>⛽ Gas Usage</h2>
+            <p id="gasUsed">🔴 Gas Used: 0 kg</p>
+            <p id="gasRemaining">🟢 Gas Remaining: 50 kg</p>
+            <p id="estimatedDays">📅 Estimated Days Left: 25</p>
+        </div>
+
+        <button class="btn" onclick="sendGasData()">Send Data</button>
+    </div>
+
+    <script src="script3.js"></script>
+      
+</body>
+</html>
